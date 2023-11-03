@@ -1,0 +1,64 @@
+#week1Content {
+    padding: 10px;
+    font-size: 14px;
+}
+
+#week1Content h1 {
+    color: green;
+    font-size: 40px;
+}
+
+#week1Content h2 {
+    color: red;
+    margin-top: 20px;
+    font-size: 28px; 
+}
+
+#week1Content img {
+    max-width: 40%; 
+    height: auto;
+}
+
+#week1Content ol {
+    color: blue;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 18px; 
+}
+
+#week1Content li {
+    margin-bottom: 20px;
+}
+
+#week2Content {
+    padding: 10px;
+    font-size: 14px;
+}
+
+#week2Content h1 {
+    color: green;
+    font-size: 40px;
+}
+
+#week2Content h2 {
+    color: red;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+#week2Content img {
+    max-width: 40%;
+    height: auto;
+}
+
+#week2Content ol {
+    color: blue;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#week2Content li {
+    margin-bottom: 20px;
+}
+

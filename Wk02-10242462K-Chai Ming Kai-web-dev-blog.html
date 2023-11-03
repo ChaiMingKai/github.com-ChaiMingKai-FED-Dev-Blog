@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week Selection</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        body {
+            background-color: rgb(13, 178, 233);
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="top">
+        <ul>
+            <li><a href="#week1" onclick="showWeek('week1')">Week 1</a></li>
+            <li><a href="#week2" onclick="showWeek('week2')">Week 2</a></li>
+            <li><a href="#week3" onclick="showWeek('week3')">Week 3</a></li>
+        </ul>
+    </nav>
+
+    <div id="week1Content" class="hidden">
+        <h1>Week 1 Dev Blog</h1>
+        <h2>Intro to HTML</h2>
+        <img src="first webpage.png" alt="first webpage">
+        <ol>
+            <li>I created my first webpage</li>
+            <li>I learned how to use elements such as &lt;p&gt;, &lt;h1&gt;, &lt;em&gt;, and lists using &lt;ul&gt; or &lt;ol&gt;</li>
+            <li>I learned how to upload images using links and locally</li>
+        </ol>
+    </div>
+    
+
+    <div id="week2Content" class="hidden">
+        <h1>Week 2 Dev Blog</h1>
+        <h2>Intro to CSS</h2>
+        <img src="css.png" alt="css">
+        <ol>
+            <li>I learned some HTML semantic elements like &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;, and &lt;section&gt; so that the HTML code is not messy.</li>
+            <li>I learned that CSS is for sizing,colour and positioning of the texts or images in html</li>
+            <li>I learned how to link CSS file with html</li>
+        </ol>
+    </div>
+
+    <div id="week3Content" class="hidden">
+        <h2>Week 3 Dev Blog</h2>
+        <h2>More about CSS</h2>
+        <img src="positioning.png" alt="positioning">
+        <ol>
+            <li>I learned different types of selector such as class selector that can be reused and stacked</li>
+            <li>I learned about different ways of positioning such as relative,absolute,relative absolute and fixed positioning that help to tidy the webpage.</li>
+            <li>I learned the pros and cons of low fidelity and high fidelity wireframes.</li>
+        </ol>
+    </div>
+
+    <script>
+        function showWeek(week) {
+            document.getElementById('week1Content').classList.add('hidden');
+            document.getElementById('week2Content').classList.add('hidden');
+            document.getElementById('week3Content').classList.add('hidden');
+            document.getElementById(week + 'Content').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
