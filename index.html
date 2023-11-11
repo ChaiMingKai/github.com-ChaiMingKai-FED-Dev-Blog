@@ -3,16 +3,6 @@
 <head>
     <title>Week Selection</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <style>
-        .hidden {
-            display: none;
-        }
-
-        body {
-            background-color: rgb(13, 178, 233);
-        }
-
-    </style>
 </head>
 <body>
     <nav id="top">
@@ -20,6 +10,7 @@
             <li><a href="#week1" onclick="showWeek('week1')">Week 1</a></li>
             <li><a href="#week2" onclick="showWeek('week2')">Week 2</a></li>
             <li><a href="#week3" onclick="showWeek('week3')">Week 3</a></li>
+            <li><a href="#week4" onclick="showWeek('week4')">Week 3</a></li>
         </ul>
     </nav>
 
@@ -47,7 +38,7 @@
     </div>
 
     <div id="week3Content" class="hidden">
-        <h2>Week 3 Dev Blog</h2>
+        <h1>Week 3 Dev Blog</h1>
         <h2>More about CSS</h2>
         <img src="positioning.png" alt="positioning">
         <ol>
@@ -57,11 +48,24 @@
         </ol>
     </div>
 
+    
+    <div id="week4Content" class="hidden">
+        <h1>Week 4 Dev Blog</h1>
+        <h2>Git and responsive images</h2>
+        <img src="responsive images.png" alt="responsive images">
+        <ol>
+            <li>I learned the importance of responsive images as it can provide better control on different device.</li>
+            <li>I learned how to use responsive images to scale and fit in flex layout.</li>
+            <li>I learned how to work on git repositories by cloning or commiting.</li>
+        </ol>
+    </div>
+
     <script>
         function showWeek(week) {
             document.getElementById('week1Content').classList.add('hidden');
             document.getElementById('week2Content').classList.add('hidden');
             document.getElementById('week3Content').classList.add('hidden');
+            document.getElementById('week4Content').classList.add('hidden');
             document.getElementById(week + 'Content').classList.remove('hidden');
         }
     </script>
