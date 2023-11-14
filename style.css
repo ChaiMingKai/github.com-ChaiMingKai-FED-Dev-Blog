@@ -36,3 +36,8 @@ body ol {
 body li {
     margin-bottom: 10px;
 }
+
+.quiz-image {
+    width: 400px;
+    height: 250px;
+}
