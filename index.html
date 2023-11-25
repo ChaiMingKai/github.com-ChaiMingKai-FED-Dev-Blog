@@ -12,6 +12,7 @@
             <li><a href="#week3" onclick="showWeek('week3')">Week 3</a></li>
             <li><a href="#week4" onclick="showWeek('week4')">Week 4</a></li>
             <li><a href="#week5" onclick="showWeek('week5')">Week 5</a></li>
+            <li><a href="#week6" onclick="showWeek('week6')">Week 6</a></li>
         </ul>
     </nav>
 
@@ -77,6 +78,19 @@
         </ol>
     </div>
 
+    <div id="week6Content" class="hidden">
+        <h1>Week 6 Dev Blog</h1>
+        <h2>JavaScript Basis</h2>
+        <img src="common methods.png" alt="css">
+        <img src="literal-function.png" alt="css">
+        <ol>
+            <li>I learned how to use different operators (> < >= <= != ! == === || && * / % + -)</li>
+            <li>I learned some common methods and properties and how to apply it on JavaScript</li>
+            <li>I learned the difference between literal object and function-based objects.</li>
+        </ol>
+    </div>
+
+
 
     <script>
         function showWeek(week) {
@@ -85,6 +99,7 @@
             document.getElementById('week3Content').classList.add('hidden');
             document.getElementById('week4Content').classList.add('hidden');
             document.getElementById('week5Content').classList.add('hidden');
+            document.getElementById('week6Content').classList.add('hidden');
             document.getElementById(week + 'Content').classList.remove('hidden');
         }
     </script>
