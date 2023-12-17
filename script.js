@@ -8,5 +8,6 @@ function showWeek(week) {
     document.getElementById('week6Content').classList.add('hidden');
     document.getElementById('week7Content').classList.add('hidden');
     document.getElementById('week8Content').classList.add('hidden');
+    document.getElementById('week9Content').classList.add('hidden');
     document.getElementById(week + 'Content').classList.remove('hidden');
 }
